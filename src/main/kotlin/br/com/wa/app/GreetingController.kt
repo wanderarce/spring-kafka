@@ -12,7 +12,7 @@ import br.com.wa.app.Greeting;
 
 @RestController
 class GreetingController {
-
+ 
     val counter: AtomicLong = AtomicLong();
 
     @RequestMapping("/greeting")
