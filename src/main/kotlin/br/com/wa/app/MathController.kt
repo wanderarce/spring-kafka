@@ -13,9 +13,10 @@ class MathController {
 
     val counter: AtomicLong = AtomicLong();
 
-    @RequestMapping(value="/sum/{numberOne}")
-    fun sum(@PathVariable(value="numberOne") numberOne: String) :String{
-        return numberOne ;
+    @RequestMapping(value=["/sum/{numberOne}/{numberTwo}"])
+    fun sum(@PathVariable(value="numberOne") numberOne: String?, 
+    @PathVariable(value="numberTwo") numberTwo: String?) :Double{
+        return 1.0;
     }
 
 }
